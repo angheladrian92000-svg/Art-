@@ -1,0 +1,260 @@
+<html larg="ro">
+  <head>
+    <meta charset="UTF-8">
+    <title>Inscrie-te</title>
+    <link href="art.css"
+      type="text/css"
+      rel="stylesheet">
+  </head>
+  
+
+  <body>
+    <div id="welcome-msg" class="welcome-msg">Bine ai venit</div>
+    <script src="script.js" defer></script>
+        <!------------------- INCEPUT PAGINA----------->
+    <div class="pagina">
+    
+    <!------------------- INCEPUT HEADER----------->
+      <div class="header">
+        <div class="container">
+          <div class="logo">
+            <img src="logo.jpg"
+                        width="204">
+          </div>
+          <div class="nav">
+            <ul>
+                <ul>
+                                    <li><a href="Art.html">Pagina</a></li>
+                  <li><a href="inscriete.html">Inscrie-te</a></li>
+                  <li><a href="Galerie.html">Galerie</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                </ul>                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  <!------------------- FINAL ----------->
+    <!------------------- INCEPUT CONTINUT----------->
+            <!------------------- INCEPUT FORMULAR----------->
+                <div class="contact">
+                    <h1>Inscrie-te</h1>
+           <form
+              id="myForm" action="https://formspree.io/f/mdallwrd" method="POST" enctype="multipart/form-data">
+      <table align="center" width="800" >
+        <tr>
+        <td width="300" valign="top">
+            <!-----Informatii personale
+            Nume
+            Prenume
+            Email----->
+            <h3>Informatii personale</h3>
+              Nume
+              <input type="text"
+                            placeholder="Numele dvs."
+                            required
+                            id="nume"
+                            name="nume"
+                            value=""><br><br>
+              Prenume
+              <input type="text"
+                            placeholder="Prenume dvs."
+                            required
+                            id="prenume"
+                            name="prenume"
+                            value=""><br><br>
+                            
+              Email
+              <input type="email"
+                            placeholder="Email-ul dvs."
+                            required
+                            id="email"
+                            name="emai"
+                            value=""
+                            ><br><br>
+                      
+                            Telefon
+              <input type="phone"
+                            placeholder="Telefonul dvs."
+                            required
+                            maxlength="10"
+                            minlength="5"
+                            id="telefon"
+                            name="telefn"
+                            value=""><br><br>
+			  <h3>Prezenta Generala</h3>
+              <input type="checkbox"
+                id="Schizofrenie"
+                name="istoric"
+                value="Schizofrenie"> <label for="Schizofrenie"> Schizofrenie</label>
+                <br>
+              <input type="checkbox"
+              id="ADHD"
+                name="istoric"
+                value="ADHD"><label for="ADHD"> ADHD</label><br>
+              <input type="checkbox"
+              id="Atac de panică"
+                name="istoric"
+                value="Atac de panică"><label for="Atac de panică"> Atac de panică</label><br>
+                <input type="checkbox"
+              id="Demență"
+                name="istoric"
+                value="Demență"><label for="Demență"> Demență</label><br>
+                            <input type="checkbox"
+              id="Fobie socială"
+                name="istoric"
+                value="Fobie socială"><label for="Fobie socială"> Fobie socială</label><br>
+                            
+                            <input type="checkbox"
+                id="Glosofobie"
+                name="istoric"
+                value="Glosofobie"> <label for="Glosofobie"> Glosofobie</label>
+                <br>
+              <input type="checkbox"
+              id="Hipersomnie"
+                name="istoric"
+                value="Hipersomnie"><label for="Hipersomnie"> Hipersomnie</label><br>
+              <input type="checkbox"
+              id="Psihoză"
+                name="istoric"
+                value="Psihoză"><label for="Psihoză"> Psihoză</label><br>
+                <input type="checkbox"
+              id="Tic nervos"
+                name="istoric"
+                value="Tic nervos"><label for="Tic nervos"> Tic nervos</label><br>
+                            <input type="checkbox"
+              id="Tulburare acută de stres"
+                name="istoric"
+                value="Tulburare acută de stres"><label for="Tulburare acută de stres"> Tulburari de stres</label><br>
+                                
+          <!------Buton Radio------>
+          <h3>Selectati sexul si varsta</h3>
+          <input type="radio" name="sex"
+          id="Masculin"
+          value="M"><label for="masculin"></label>Masculin
+          <input type="radio" name="sex"
+            id="Feminim"
+            value="F"><label for="feminim">Feminim</label><br><br>
+          <!---------Select----------->
+        <select>
+          <option>Selectati varsta</option>
+
+          <label for="0-18">
+          <option
+          value="0-18"
+          id="0-18"
+          name="0-18">
+          0-18</option>
+          </label>
+
+          <label fo="19-30">
+          <option
+          value="19-30"
+          id="19-30"
+          name="19-30">
+          19-30</option>
+          </label>
+
+          <label for="31-50">
+          <option
+          value="31-50"
+          id="31-50"
+          name="31-50">
+          31-50</option>
+          </label>
+
+          <label for="50+">
+          <option
+          name="50+"
+          id="50+"
+          value="50+">
+          50+</option>
+          </label>
+        </select><br><br>
+          <!---------Reset+Trimitere--------->
+          <input type="reset" value="Reseteaza">
+          <input type="submit"value="Trimite">
+          <!--------------Textarea-------->
+        </td>
+          <td width="500" valign="top">
+          <!------Buton Radio------>
+          <h3>Urmati vre-un tratament in prezent?</h3>
+          <input type="radio" name="tratament"
+            id="Da"
+            value="Da">
+           Da<br>
+          <input type="radio" name="tratament"
+            id="Nu"
+            value="Nu">
+           Nu<br><br>
+          <b>Daca da, indicati medicamentele in casuta de mai jos</b><br>
+          <textarea 
+          rows="15" cols="17"
+                    maxlength="500"
+          minlength="5"
+          id="text"
+          name="Urmati vre-un tratament in prezent?"
+          value="">
+                    </textarea>
+          <div class="pachete">
+    <h2>Alege pachetul dorit</h2>
+    <p>Te rugăm să selectezi pachetul de ședințe pe care dorești să îl achiziționezi:</p>
+        <label class="optiune">
+            <input type="radio" name="pachet"
+            value="1 ședință - 300 lei">
+            1 ședință - 300 lei
+        </label>
+
+        <label class="optiune">
+            <input type="radio" name="pachet"
+            value="2 ședințe - 550 lei">
+            2 ședințe - 550 lei
+        </label>
+
+        <label class="optiune">
+            <input type="radio" name="pachet"
+            value="3 ședințe - 800 lei">
+            3 ședințe - 800 lei
+        </label>
+		<label class="optiune">
+            <input type="radio" name="pachet"
+            value="Pachet complet (9 ședințe) - 2200 lei">
+            Pachet complet (9 ședințe) - 2200 lei
+        </label>
+
+  
+    <script src="script.js" defer></script>
+
+    <p class="durata">
+        Durata unei ședințe este de <strong>60 de minute (1 oră)</strong>.
+    </p>
+</div>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="script.js" defer></script>
+  </div>
+        <div class="paragraf">
+          <h3>Termeni și condiții</h3>
+            <p>
+                Prin bifarea acestei căsuțe "Trimite", confirm că am citit și sunt de acord cu termenii și condițiile.<br>
+        Datele tale personale vor fi prelucrate conform legislației în vigoare privind protecția datelor (GDPR)<br>
+        și vor fi folosite exclusiv pentru scopurile serviciilor noastre.
+            </p>
+          </div>
+</div>          
+            <!------------------- FINAL FORMULAR------------->
+    
+    <!------------------- FINAL CONTINUT----------->
+        
+  <!------------------- FINAL PAGINA----------->
+  
+  <!------------------- INCEPUT FOOTER----------->
+    <div class="inaintedefooter"></div>
+    <div class="footer">
+      &copy;2026-Art?
+    </div>
+  <!------------------- FINAL FOOTER----------->
+  </body>
+</html>
